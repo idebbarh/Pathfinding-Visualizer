@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pathfinding Visualizer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <script defer src="js/main.js" type="module"></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- Start Header -->
+      <header id="header">
+        <div class="header-logo"><a href="#">Pathfinding Visualizer</a></div>
+        <nav class="nav-bar">
+          <ul id="select-algo" class="header-selector">
+            <span class="selected-option">Algorithms</span>
+            <div class="all-options">
+              <li class="option dij-algo">Dijkstra's Algorithm</li>
+              <li class="option a-star-algo">A* Search</li>
+              <li class="option bfs-algo">Breadth-first Search</li>
+              <li class="option dfs-algo">Depth-first Search</li>
+            </div>
+          </ul>
+          <ul id="select-maze-algo" class="header-selector">
+            <span class="selected-option">Mazes & Patterns</span>
+            <div class="all-options">
+              <li class="option recur-div">Recursive Division</li>
+            </div>
+          </ul>
+          <div class="header-btns start-algo-btn">
+            <button class="none">
+              <span class="status">Visualize</span> <span class="type"></span>!
+            </button>
+          </div>
+          <div class="header-btns clear-board-btn">
+            <button>Clear Board</button>
+          </div>
+          <div class="header-btns clear-path-btn">
+            <button>Clear Path</button>
+          </div>
+          <ul id="select-search-speed" class="header-selector">
+            <span class="selected-option">Speed:<span>Average</span></span>
+            <div class="all-options">
+              <li class="option fast">Fast</li>
+              <li class="option average use">Average</li>
+              <li class="option slow">Slow</li>
+            </div>
+          </ul>
+          <div class="other-header-tools">
+            <i class="fa-solid fa-bomb bomb-icon-btn"></i>
+          </div>
+        </nav>
+      </header>
+      <!-- End Header -->
+      <!-- Start Grid -->
+      <div class="grid" id="grid">
+      </div>
+      <!-- End Grid -->
+      <!-- Start Footer -->
+      <footer id="footer"></footer>
+      <!-- End Footer -->
+    </div>
+  </body>
+</html>
